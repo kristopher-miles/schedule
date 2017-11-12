@@ -6,3 +6,22 @@ body {
 a {
   color: #00B7FF;
 }
+
+#login-box{
+    background-color: lightgray;
+    padding:1em;
+    text-align: center
+}
+
+.btn{
+    margin:.5em;
+}
+
+.card{
+    display:inline-flex;
+}
+
+#chapters{
+    margin-top: 2em;
+    text-align: center;
+}

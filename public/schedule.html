@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fimfiction Story Scheduler</title>
+  <meta name="author" content="Starscribe">
+  <meta name="description" content="For scheduling the posting of chapters and blogs (and maybe stories one day) onto fimfiction.">
+  <meta name="keywords" content="fimfiction, my little pony, pony, stories, fiction, fanfiction">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+  </head>
+  <body>
+      <div  class="container-flex">
+          <h3>Welcome back, @user!</h3>
+          <p>First, go onto fimfiction and upload your stories and chapters. This site is not meant to take the place of fimfictions's own uploading system. Once you've done that, you can refresh this page for a fresh listing of your stories. Currently, this site cannot be used to post new stories, only update existing ones. Upload the chapters you wish to post on fimfiction, but don't submit them. You can schedule the API here to do that for you automatically. First, select a story from your profile to update:</p>
+          <div id="stories">
+              <div class="card" style="width: 15rem;">
+                  <div class="card-body">
+                    <h4 class="card-title">Story Title</h4>
+                    <p class="card-text">This is the story's short description.</p>
+                      <a href="#" class="btn btn-secondary">Update this story</a>
+                  </div>
+              </div>
+              
+              <div class="card" style="width: 15rem;">
+                  <div class="card-body">
+                    <h4 class="card-title">Story Title</h4>
+                    <p class="card-text">This is the story's short description.</p>
+                      <a href="#" class="btn btn-secondary">Update this story</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div id="chapters">
+              <h4>Select an unsubmitted chapter from this story to schedule:</h4>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Unsubmitted Chapter 1
+                      <a type="button" class="btn btn-info btn-sm">Chapter Contents</a>
+                      <a type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModal">Schedule Chapter Update</a></li>
+              </ul>
+          </div>
+      
+      </div>
+      
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+           function autorun()
+           {
+
+           }
+           if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
+           else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
+           else window.onload = autorun;
+      </script>
+  </body>
+</html>
